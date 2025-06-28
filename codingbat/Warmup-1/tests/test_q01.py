@@ -1,7 +1,10 @@
 # test_sleep.py
-
+import sys
+import os
 import pytest
-from sleep import sleep_in
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+from q01 import sleep_in
 
 @pytest.mark.parametrize("weekday,vacation,expected", [
     (False, False, True),
