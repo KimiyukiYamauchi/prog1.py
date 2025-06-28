@@ -7,6 +7,7 @@ from sleep import sleep_in
     (False, False, True),
     (True, False, False),
     (False, True, True),
+    (True, True, True),
 ])
 def test_sleep_in(weekday, vacation, expected):
     assert sleep_in(weekday, vacation) == expected
