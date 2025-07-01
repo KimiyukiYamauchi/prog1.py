@@ -16,4 +16,7 @@
 
 
 def near_hundred(n):
-    return False
+     if (90<=n and n <=110) or (190<=n and n<=210):
+        return True
+     else:
+        return False
