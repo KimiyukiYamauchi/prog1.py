@@ -13,6 +13,4 @@
 # 
 
 def lone_teen(a, b):
-    def is_teen(n):
-        return 13 <= n <= 19
-    return is_teen(a) != is_teen(b)  # XOR的な動作
+    return False
