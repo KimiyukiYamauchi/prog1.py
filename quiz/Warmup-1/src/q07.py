@@ -16,4 +16,4 @@
 
 
 def near_hundred(n):
-    return False
+    return abs(100 - n) <= 10 or abs(200 - n) <= 10
