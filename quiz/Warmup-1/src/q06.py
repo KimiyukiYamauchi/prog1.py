@@ -15,4 +15,8 @@
 #         それ以外はFalse
 # 
 def makes10(a, b):
-    return False
+    return a == 10 or b == 10 or a + b == 10
+
+#a==10:aが10ならTrue
+#b==10:bが10ならTrue
+#a+b==10:２つの合計が10ならTrue
