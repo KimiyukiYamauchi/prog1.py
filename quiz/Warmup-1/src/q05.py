@@ -15,5 +15,5 @@
 # 　parrot_trouble(False, 6) → False
 # 
 
-def parrot_trouble(talking, hour):
-    return False
+def parrot_trouble(talking: bool, hour: int) -> bool:
+    return talking and (hour < 7 or hour > 20)
