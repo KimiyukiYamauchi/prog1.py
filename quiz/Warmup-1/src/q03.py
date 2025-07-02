@@ -12,4 +12,7 @@
 # 
 
 def sum_double(a, b):
-    return -1
+   if a = b:
+       return sum_double(a + b * :wq!)
+
+
