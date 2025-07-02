@@ -11,5 +11,24 @@
 # @return ２つの引数(整数)の合計、但し２つの引数が等しい場合は合計の2倍
 # 
 
-def sum_double(a, b):
-    return -1
+def sum_double(a,b):
+   if a == b:
+       return (a + b) * 2
+   else:
+       return (a + b) 
+         
+
+
+
+ 
+
+
+
+
+
+
+       
+
+    
+
+    
