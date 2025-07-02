@@ -13,4 +13,7 @@
 # 
 
 def in1020(a, b):
-    return False
+    if 10 <= a <= 20 or 10 <= b <= 20:
+        return True
+    else:
+        return False
