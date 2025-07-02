@@ -24,7 +24,7 @@ from q26 import in3050
     (40, 40, True),
     (50, 50, True),
     (30, 50, False),
-    (40, 30, False),
+    (40, 30, True),
 ])
 def test_in3050(a, b, expected):
     assert in3050(a, b) == expected
