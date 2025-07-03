@@ -14,6 +14,10 @@
 # 　parrot_trouble(True, 7) → False
 # 　parrot_trouble(False, 6) → False
 # 
-
 def parrot_trouble(talking, hour):
+    if talking==True:
+        if hour<7 or hour>20:
+            return True
+
     return False
+
