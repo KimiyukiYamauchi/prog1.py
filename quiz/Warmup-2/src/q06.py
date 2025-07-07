@@ -5,7 +5,7 @@
 # 　array_count9([1, 9, 9]) → 2
 # 　array_count9([1, 9, 9]) → 2
 # 
-# @param array $nums int型の配列
+# @param array nums int型の配列
 # 
 # @return 上記の条件での数を返す
 # 

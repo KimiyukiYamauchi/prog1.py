@@ -5,7 +5,7 @@
 # 　array_front9([1, 2, 3, 4, 9]) → false
 # 　array_front9([1, 2, 3, 4, 5]) → false
 # 
-# @param array $nums int型の配列
+# @param array nums int型の配列
 # 
 # @return 上記の条件での数を返す
 # 
