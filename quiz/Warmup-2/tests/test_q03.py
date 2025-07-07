@@ -16,8 +16,8 @@ from q03 import string_bits
     ("Greetings", "Getns"),
     ("Chocoate", "Coot"),
     ("pi", "p"),
-    ("Hello Kitten", "HlOkte"),
-    ("haxapxpxpy", "happy"),
+    ("Hello Kitten", "HloKte"),
+    ("hxaxpxpxy", "happy"),
 ])
 def test_string_bits(s, expected):
     assert string_bits(s) == expected
