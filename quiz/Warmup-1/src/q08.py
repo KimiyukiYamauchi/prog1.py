@@ -1,8 +1,8 @@
 # 受け取った引数で以下の条件が成り立つならTrueを返す
 # それ以外はFalseを返す
 # 条件：
-# 　第3引数の$negativeがFalseなら第1、第2引数のいずれかが正の数で、もう一方が負の数
-# 　第3引数の$negativeがTrueなら第1、第2引数のどちらも負の数
+# 　第3引数のnegativeがFalseなら第1、第2引数のいずれかが正の数で、もう一方が負の数
+# 　第3引数のnegativeがTrueなら第1、第2引数のどちらも負の数
 # 例：
 # 　pos_neg(1, -1, False) → True
 # 　pos_neg(-1, 1, False) → True
@@ -17,4 +17,9 @@
 # 
 
 def pos_neg(a, b, negative):
-    return False
+    if negative == False and a < 0 < b or a > 0 > b:
+        return True
+    elif negative == True and a < 0 and b < 0:
+        return True
+
+

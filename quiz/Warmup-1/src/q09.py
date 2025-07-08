@@ -10,8 +10,15 @@
 # 
 # @return notから始まる文字列を返す
 # 
+import re
 
 def not_string(s):
-    return str
-# Example usage:
+    if re.match("not",s):
+        return s
+    else:
+        return "not " + s
+
+
+        
+# Example usage(使用例):
 # print(not_string("candy"))  # Output: "not candy"
