@@ -8,5 +8,21 @@
 # 
 # @return 上記の条件での数を返す
 
+#def last2(str):
+ #   if len(str) < 2:
+  #      return 0
+   # return str[:-2].count(str[-2:])
+
 def last2(str):
-    return -1
+    if len(str) < 2:
+        return 0
+
+    target = str[-2:]
+    count = 0
+
+    for i in range(len(str) - 2):
+        if str[i:i+2] == target:
+            count += 1
+
+    return count
+

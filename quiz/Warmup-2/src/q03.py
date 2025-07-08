@@ -10,4 +10,5 @@
 # 
 
 def string_bits(str):
-    return str
+    return ''.join(str[i] for i in range(0, len(str), 2))
+    
