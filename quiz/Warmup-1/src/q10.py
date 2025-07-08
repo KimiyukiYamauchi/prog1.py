@@ -15,5 +15,5 @@
 # @return 対象の文字列から削除位置の文字を削除した文字列を返す
 # 
 
-def missing_char(str, n):
-    return str
+def missing_char(str, n): 
+    return str[:n] + str[n + 1:]
