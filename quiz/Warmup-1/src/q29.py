@@ -13,4 +13,7 @@
 # 
 
 def last_digit(a, b):
-    return False
+    if abs(a) % 10 == abs(b) %10:
+        return True
+    else:
+        return False

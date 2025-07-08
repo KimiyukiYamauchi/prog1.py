@@ -12,4 +12,15 @@
 # 　　　　2つの引数(整数)が、どちらも10以上20以下でない場合は0を返す
 
 def max1020(a, b):
-    return a
+    in_range = []
+
+    if 10 <= a <= 20:
+        in_range.append(a)
+    if 10 <= b <= 20:
+        in_range.append(b)
+
+    if not in_range:
+        return 0
+    else:
+        return max(in_range)
+
