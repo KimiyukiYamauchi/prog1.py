@@ -1,4 +1,3 @@
-# 2つの引数(整数)のうち10に近いほうを返す、2つの引数(整数)と10の距離が等しい場合は0を返す。
 # 例：
 # 　　close10(8, 13) → 8
 # 　　close10(13, 8) → 8
@@ -12,4 +11,13 @@
 # 
 
 def close10(a, b):
-    return 0
+    diff_a = abs(10 - a)
+    diff_b = abs(10 - b)
+
+    if diff_a < diff_b:
+        return a
+    elif diff_b < diff_a:
+        return b
+    else:
+        return 0
+
