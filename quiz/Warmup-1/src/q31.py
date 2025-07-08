@@ -14,4 +14,5 @@
 # 　　　　の文字を結合した文字列を返す。
 
 def every_nth(str, n):
+    if  
     return str

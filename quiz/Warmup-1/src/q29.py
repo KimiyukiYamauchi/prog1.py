@@ -13,4 +13,6 @@
 # 
 
 def last_digit(a, b):
+    if a%10 == b%10:
+        return True
     return False
