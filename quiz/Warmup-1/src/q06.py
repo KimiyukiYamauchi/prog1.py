@@ -14,5 +14,6 @@
 # @return 条件が成り立つならTrueを返す
 #         それ以外はFalse
 # 
-def makes10(a, b):
-    return False
+def makes10(a: int, b: int) -> bool:
+    return a == 10 or b == 10 or (a + b == 10)
+
