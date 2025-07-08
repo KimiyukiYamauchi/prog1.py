@@ -10,4 +10,4 @@
 # 
 
 def front22(str):
-    return stt
+    return str[:2] + str[:] + str[:2]
