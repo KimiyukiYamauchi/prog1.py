@@ -12,4 +12,6 @@
 # 
 
 def front3(s):
-    return s
+    if len(s) <3:
+        return s[:]*3
+    return s[0:3]*3

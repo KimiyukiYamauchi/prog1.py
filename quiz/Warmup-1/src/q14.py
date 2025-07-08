@@ -10,4 +10,6 @@
 # 
 
 def or35(n):
+    if n%3==0 or n%5==0:
+        return True
     return False

@@ -12,4 +12,9 @@
 # 
 
 def int_max(a, b, c):
-    return a
+    if a<=b<c or b<=a<c:
+        return c
+    elif a<=c<b or c<=a<b:
+        return b
+    elif b<=c<a or c<=b<a:
+        return a
