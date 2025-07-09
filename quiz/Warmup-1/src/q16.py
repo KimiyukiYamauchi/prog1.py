@@ -10,4 +10,8 @@
 # 
 
 def start_hi(str):
+    if hi  
     return False
+
+    else:
+        True

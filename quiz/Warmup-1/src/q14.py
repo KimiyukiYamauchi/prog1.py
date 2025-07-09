@@ -10,4 +10,8 @@
 # 
 
 def or35(n):
-    return False
+    if int(n) % 3 == False or int(n) % 5 == False:
+        return True
+    
+    else:
+        return False
