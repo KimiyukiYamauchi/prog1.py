@@ -10,4 +10,6 @@
 # 
 
 def front22(str):
-    return stt
+    if len(str) > 2:
+        return str[0:2] + str + str[0:2]
+    return str * 3

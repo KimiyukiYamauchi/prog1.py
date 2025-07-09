@@ -14,4 +14,6 @@
 # 
 
 def has_teen(a, b, c):
+    if any(13 <= x <= 19 for x in (a, b, c)):
+        return True
     return False

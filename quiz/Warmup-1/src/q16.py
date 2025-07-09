@@ -10,4 +10,6 @@
 # 
 
 def start_hi(str):
+    if "hi" in str and str[0:2] == "hi":
+        return True
     return False

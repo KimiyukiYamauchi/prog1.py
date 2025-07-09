@@ -16,4 +16,6 @@
 # 
 
 def missing_char(str, n):
-    return str
+    if n < 0 or n > len(str):
+        return str
+    return str[:n] + str[n+1:]
