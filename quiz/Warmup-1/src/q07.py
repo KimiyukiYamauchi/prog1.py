@@ -14,6 +14,5 @@
 #         それ以外はFalse
 # 
 
-
 def near_hundred(n):
-    return False
+    return  90 <= n <= 110 or 190 <= n <= 210
