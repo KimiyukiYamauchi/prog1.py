@@ -11,5 +11,5 @@
 # 　　　　但し、mの位置の文字は任意の文字でOK
 # 
 
-def mix_start(str):
-    return str
+def mix_start(s):
+    return len(s) >= 3 and s[1:3] == "ix"

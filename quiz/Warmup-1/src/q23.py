@@ -11,5 +11,10 @@
 # @return 上のルールにしたがって文字列を返す
 # 
 
-def start_oz(str):
+def start_oz(s):
+    result = ""
+    if len(s) >= 1 and s[0] == "o":
+        result += "o"
+    if len(s) >= 2 and s[1] == "z":
+        result += "z"
     return result

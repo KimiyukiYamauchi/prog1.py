@@ -13,5 +13,5 @@
 # 　　　　文字列を返す。整数として3を受け取った場合、文字列の0,3,6,9...番目
 # 　　　　の文字を結合した文字列を返す。
 
-def every_nth(str, n):
-    return str
+def every_nth(s, n):
+    return s[::n]

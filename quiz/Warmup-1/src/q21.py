@@ -12,5 +12,7 @@
 # 
 #/
 
-def del_del(str):
-    return str
+def del_del(s):
+    if len(s) >= 4 and s[1:4] =="del":
+        return s[0] +s[4:]
+    return s
