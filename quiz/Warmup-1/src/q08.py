@@ -16,10 +16,24 @@
 #         それ以外はFalse
 # 
 
+
 def pos_neg(a, b, negative):
-    if negative == False and a < 0 or b > 0:
-        return True
-    elif negative == True and a < 0 and b < 0:
-        return True
+    if a < 0 and b < 0:
+        return negative == True 
+    elif a < 0 and b > 0 or a > 0 and b < 0: 
+        return negative == False 
+    else:
+        return False
+
+#日本語が難しい。条件の意味は、
+#a,bの引数のいずれかが正の数で、もう一方が負の数のときにnegativeがFalse。
+#(実行結果はこのnegativeがFalse、まで含めてTrueになる)
+#2つ目は、a,bのどちらも負の数のときにnegativeがTrue
+#(実行結果はこのnegativeがTrue、まで含めてTrueになる)
+#elseは、negative == Falseにすると間違い。上記の条件以外の実行結果をFalseにするようにする
+
+
+
+
 
 
