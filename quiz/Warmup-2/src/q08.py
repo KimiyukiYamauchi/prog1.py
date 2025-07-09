@@ -11,7 +11,5 @@
 # 
 
 def array123(nums):
-    if "1, 2, 3" in nums:
-        return True
-    else:
-        return False
+    text = "".join(str(n) for n in nums)
+    return "123" in text

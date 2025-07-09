@@ -12,4 +12,11 @@
 # @return 上記の条件が成り立つ個数を返す
 
 def string_match(a, b):
-    return -1
+    count = 0
+    for i in range(min(len(a), len(b)) -1):
+        pair_a = a[i:i+2]
+        pair_b = b[i:i+2]
+
+        if pair_a == pair_b:
+            count += 1
+    return count
