@@ -10,4 +10,12 @@
 # @return 対象の先頭文字と末尾の文字を入れ替えた文字列を返す
 # 
 def front_back(s):
-    return s
+    if len(s) <= 1:
+        return s
+    else:
+        front_char = s[0]
+        back_char = s[-1]
+        middle_chars = s[1:-1]
+        return back_char + middle_chars + front_char
+
+ 
