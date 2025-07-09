@@ -11,4 +11,5 @@
 # 
 
 def back_around(str):
-    return ''
+    last_char = s[-1]
+    return last_char + s + last_char
