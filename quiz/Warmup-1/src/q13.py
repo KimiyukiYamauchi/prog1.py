@@ -11,4 +11,8 @@
 # 
 
 def back_around(str):
-    return ''
+    return str[-1] + str + str[-1]
+
+#文字列の最後の文字をスライスで取得し、それを前後に結合
+#(コードは左から実行される)
+

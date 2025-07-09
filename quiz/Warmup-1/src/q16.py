@@ -10,4 +10,6 @@
 # 
 
 def start_hi(str):
-    return False
+    return str.startswith("hi") 
+
+#startswithメソッドで文字列の最初にhiがあるか確認

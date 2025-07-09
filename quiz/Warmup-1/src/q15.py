@@ -10,4 +10,7 @@
 # 
 
 def front22(str):
-    return stt
+    return str[:2] + str + str[:2]
+
+#文字列の先頭2文字をスライスで取得して、文字列の前後に結合
+
