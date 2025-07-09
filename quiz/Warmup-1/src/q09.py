@@ -12,6 +12,6 @@
 # 
 
 def not_string(s):
-    return str
+    
 # Example usage:
 # print(not_string("candy"))  # Output: "not candy"

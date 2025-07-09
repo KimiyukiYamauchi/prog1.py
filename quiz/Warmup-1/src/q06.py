@@ -15,7 +15,7 @@
 #         それ以外はFalse
 # 
 def makes10(a, b):
-    ifs :
-        return True
-    else:
-        return False
+   if a ==10 or b == 10 or a + b == 10:
+       return True
+   else:
+       return False
