@@ -8,7 +8,8 @@
 # @param string str 対象の文字列
 # 
 # @return 引数(文字列)の末尾の文字を引数(文字列)の前後に追加した文字列を返す
-# 
+#
 
-def back_around(str):
-    return ''
+def back_around(s):
+    last_char = s[-1]
+    return last_char + s + last_char
