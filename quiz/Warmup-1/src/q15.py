@@ -10,4 +10,8 @@
 # 
 
 def front22(str):
-    return stt
+    # 先頭2文字を取得（文字列が2文字未満でも対応）
+    front = str[:2]
+    # 先頭2文字を前後に付加して返す
+    return front + str + front
+
