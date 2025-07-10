@@ -13,4 +13,13 @@
 # 
 
 def icy_hot(temp1, temp2):
-    return False
+    if temp1 < 0  and temp2 > 100 :
+   
+        return True
+    
+    elif temp1 > 0 and temp2 < 100 :
+
+        return True
+
+    else:
+        return False
