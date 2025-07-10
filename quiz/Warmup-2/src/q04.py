@@ -9,5 +9,8 @@
 # @return 上記の条件で作られた文字列を返す
 # 
 
-def string_splosion(str):
-    return str
+def string_splosion(s):
+    result = ""
+    for i in range(1, len(s)+1):
+        result += s[:i]
+    return result

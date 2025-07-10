@@ -9,5 +9,5 @@
 # @return 上記の条件で作られた文字列を返す
 # 
 
-def string_bits(str):
-    return str
+def string_bits(s):
+    return s[::2]

@@ -10,5 +10,5 @@
 # @return 文字列と非負の整数を受け取り、文字列を非負の整数回繰り返した文字列
 # 
 
-def string_times(str, n):
-    return ''
+def string_times(s, n):
+    return s * n
