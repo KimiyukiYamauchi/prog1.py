@@ -12,4 +12,10 @@
 # 
 
 def mix_start(str):
-    return str
+    s = str[1:3] == "ix"
+
+    if str[:3] == "mix":
+        return True
+    elif s:
+        return True
+    return False

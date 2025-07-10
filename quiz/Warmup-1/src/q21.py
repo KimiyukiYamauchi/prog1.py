@@ -12,5 +12,14 @@
 # 
 #/
 
+#def del_del(str):
+    #if s := str:
+        #if "del" in s:
+            #return s.replace("del", "")
+        #return str
+
+
 def del_del(str):
+    if str[1:4] == "del":
+        return str[0] + str[4:]
     return str
