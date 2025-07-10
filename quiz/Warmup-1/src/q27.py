@@ -18,6 +18,8 @@ def max1020(a, b):
                 return a
             elif a < b:
                 return b
+            else:
+                return a
         else:
             return a
 

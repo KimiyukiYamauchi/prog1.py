@@ -14,4 +14,12 @@
 # 　　　　の文字を結合した文字列を返す。
 
 def every_nth(str, n):
-    return str
+    result = ""
+    #部分的に文字をためておく場所
+
+    for i in range(0, len(str), n):
+    # 0から文字列の長さまで、nずつ増やしながらループ
+        result += str[i]
+        # nの倍数番目の文字を結果に追加
+    
+    return result
