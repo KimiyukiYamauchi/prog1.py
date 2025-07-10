@@ -10,7 +10,10 @@
 # 
 
 def or35(n):
+
     if n % 3 == 0 or n % 5 == 0:
         return True
     else:
         return False
+    return n % 3 == 0 or n % 5 == 0
+
