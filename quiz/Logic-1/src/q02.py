@@ -10,6 +10,10 @@
 #  date デートの相手の服装のおしゃれ度、0から10の範囲
 #  
 #  @return 0=no、1=maybe、2=yesの整数値のいずれか
+#
+# date_fashion(5, 10) → 2
+# date_fashion(5, 2) → 0
+# date_fashion(5, 5) → 1
 
 def date_fashion(you, date):
     return -1
