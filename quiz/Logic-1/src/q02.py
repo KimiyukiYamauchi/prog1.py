@@ -16,4 +16,9 @@
 # date_fashion(5, 5) → 1
 
 def date_fashion(you, date):
-    return -1
+    if you <=2 or date <=2:
+        return int(0)
+    elif you >= 8 and date >=3 or you >=3 and date >=8:
+        return int(2)
+    else:
+        return int(1)
