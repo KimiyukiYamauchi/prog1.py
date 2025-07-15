@@ -12,6 +12,7 @@
 # 
 
 def not_string(s):
-    return str
-# Example usage:
-# print(not_string("candy"))  # Output: "not candy"
+    if s[0:3] == "not":
+        return s
+    else:
+        return "not " + s

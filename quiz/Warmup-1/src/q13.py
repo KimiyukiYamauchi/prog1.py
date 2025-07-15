@@ -11,4 +11,8 @@
 # 
 
 def back_around(str):
-    return ''
+    if len(str) <= 1:
+        return str * 3
+    else:
+        return str[-1] + str + str[-1]
+

@@ -12,4 +12,7 @@
 #
 
 def diff21(n):
-    return -1
+    if 21 < n :
+        return (n - 21) * 2
+    else:
+        return 21 - n

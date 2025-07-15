@@ -16,4 +16,12 @@
 # 
 
 def parrot_trouble(talking, hour):
-    return False
+    if talking == True:
+        if hour < 7:
+            return True
+        elif hour > 20:
+            return True
+        else:
+            return False
+    else:
+        return False
