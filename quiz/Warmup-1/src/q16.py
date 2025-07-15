@@ -10,4 +10,7 @@
 # 
 
 def start_hi(str):
-    return False
+    if str.startswith('hi'):
+        return True
+    else:
+        return False

@@ -12,6 +12,10 @@
 # 
 
 def not_string(s):
+  if s.startswith("not"):
+      return s
+  else:
+      return "not " + s
     
 # Example usage:
 # print(not_string("candy"))  # Output: "not candy"

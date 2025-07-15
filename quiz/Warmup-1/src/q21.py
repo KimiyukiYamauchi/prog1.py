@@ -13,4 +13,4 @@
 #/
 
 def del_del(str):
-    return str
+   if str(  
