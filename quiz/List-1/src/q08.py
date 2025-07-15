@@ -10,4 +10,7 @@
 # @return int []　上の処理を行った配列
 
 def max_end3(nums):
-    return []
+    if nums[:1] < nums[-1:]:
+        return nums[-1:]*3
+    else:
+        return nums[:1]*3

@@ -12,4 +12,11 @@
 # 
 
 def start_oz(str):
-    return result
+    if str[:1] == "o" and str[1:2] == "z":
+        return "oz"
+    if str[:1] == "o":
+        return "o"
+    if str[1:2] == "z":
+        return "z"
+    else:
+        return ""
