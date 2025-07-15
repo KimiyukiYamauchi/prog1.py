@@ -10,4 +10,4 @@
 # @return int 最初の2つの要素の合計
 
 def sum2(nums):
-    return -1
+    return sum(nums[:2])

@@ -1,4 +1,4 @@
-# 引数として与えられて２つの文字列で、文字列長の短い文字列(short)で、
+ # 引数として与えられて２つの文字列で、文字列長の短い文字列(short)で、
 # 文字列長の長い文字列(long)を囲んだ文字列を返す(short + long + short)。
 # ２つの文字列長が等しいことはない、但し、文字列長が0の場合がある
 # 例：
@@ -12,4 +12,10 @@
 # @return string 上記の条件で作られる文字列を返す
 
 def combo_string(a, b):
-   return ""
+    if len(a) < len(b):
+        short = a
+        long = b
+    else:
+        short = b
+        long = a
+    return short + long + short

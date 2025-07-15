@@ -10,4 +10,8 @@
 # 
 
 def string_splosion(str):
-    return str
+    result = ""
+    for i in range(len(str)):
+        result += str[:i+1]
+    return result
+

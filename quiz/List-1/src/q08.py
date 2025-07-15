@@ -10,4 +10,6 @@
 # @return int []　上の処理を行った配列
 
 def max_end3(nums):
-    return []
+    max_val = max(nums[0], nums[-1])  # 最初と最後の要素の大きい方を取得
+    return [max_val, max_val, max_val]
+

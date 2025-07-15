@@ -10,4 +10,4 @@
 # @return string 上記の条件で作られた文字列
 
 def without_end(str):
-    return ""
+    return str[1:-1]
