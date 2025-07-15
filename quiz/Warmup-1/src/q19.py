@@ -14,4 +14,6 @@
 # 
 
 def has_teen(a, b, c):
-    return False
+    return (13 <= a <= 19) or (13 <= b <= 19) or (13 <= c <= 19)
+
+#q18.pyと同じような問題

@@ -13,4 +13,11 @@
 #/
 
 def del_del(str):
+    if str[1:4] == "del":
+        return str[0] + str[4:]
     return str
+
+#if文の解説。
+#str[1:4]は、インデックス1からdelがあるとき〜のやつ。
+#インデックス1からdelがあれば、delの"l"はインデックス4になるため、[1:4]になる
+#0ってなに？

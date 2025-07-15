@@ -13,4 +13,12 @@
 # 
 
 def lone_teen(a, b):
-    return False
+    in_range = lambda x: 13 <= x <= 19
+    return in_range(a) ^ in_range(b)
+
+#lambda(ラムダ式 無名関数)は、defと似たような使い方
+#文法 lambda 引数:戻り値
+
+#"どちらか一方だけ"のときはXOR演算子(^)（キャロット）を使う
+
+#lambdaでin_rangeに関数を代入し、defの戻り値(return)でキャロットを使って片方が範囲内の数字か確認する

@@ -13,7 +13,6 @@
 # 
 
 def icy_hot(temp1, temp2):
-    return temp1 < 0 and temp2 > 100 or temp1 > 100 and temp2 < 0 
-
-#temp1が0より小さく、temp2が100より大きい
-#または、temp1が100より大きく、temp2が0より小さい
+    if a < 0 and b < 0:
+        return negative == True 
+    elif a < 0 and b > 0 or a > 0 and b < 0: 
