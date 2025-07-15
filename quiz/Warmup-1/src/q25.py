@@ -12,4 +12,18 @@
 # 
 
 def close10(a, b):
-    return 0
+
+    dist_a = abs(a - 10)
+    dist_b = abs(b - 10)
+
+    if dist_a < dist_b:
+
+        return a
+
+    elif dist_b < dist_a:
+
+        return b
+
+    else:
+
+        return 0
