@@ -8,5 +8,6 @@
 # 
 # @return string　上記の処理を行った文字列
 
-def first_half(str):
-    return ""
+def first_half(s):
+    half_len = len(s) // 2
+    return s[:half_len]

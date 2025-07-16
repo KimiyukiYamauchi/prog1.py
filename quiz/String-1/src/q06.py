@@ -9,5 +9,5 @@
 # 
 # @return string 上記の条件で作られた文字列を返す
 
-def first_two(str):
-    return ""
+def first_two(s):
+    return s[:2]
