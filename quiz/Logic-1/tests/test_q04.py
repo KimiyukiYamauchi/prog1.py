@@ -16,7 +16,7 @@ from q04 import caught_speeding
     (85, True, 1),
     (70, False, 1),
     (75, False, 1),
-    (75, True, 0),
+    (75, True, 1),
     (40, False, 0),
     (40, True, 0),
     (90, False, 2),
