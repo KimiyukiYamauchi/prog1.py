@@ -14,7 +14,7 @@ from q07 import love6
     (1, 6, True),
     (1, 8, False),
     (1, 7, True),
-    (7, 5, True),
+    (7, 5, False),
     (8, 2, True),
     (6, 6, True),
     (-6, 2, False),
