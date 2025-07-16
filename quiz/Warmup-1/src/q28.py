@@ -12,4 +12,8 @@
 # 
 
 def string_e(str):
-    return False
+    count = str.count("e")
+    if count == 1 or count == 3:
+        return True
+    else:
+        return False
