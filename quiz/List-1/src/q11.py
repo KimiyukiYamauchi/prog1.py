@@ -11,4 +11,4 @@
 # @return int [] 上記の処理を行った配列を返す
 
 def make_ends(nums):
-    return []
+    return [nums[0],nums[-1]]
