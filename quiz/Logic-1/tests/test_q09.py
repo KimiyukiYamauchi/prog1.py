@@ -19,8 +19,8 @@ from q09 import near_ten
     (22, True),
     (23, False),
     (54, False),
-    (155, True),
-    (158, False),
+    (155,False),
+    (158, True),
     (3, False),
     (1, True),
 ])
