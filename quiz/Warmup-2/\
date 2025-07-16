@@ -9,7 +9,7 @@
 # @return 上記の条件での数を返す
 
 def array_count9(nums):
-    if 9 in nums:
-        return nums.count(9)
+    if "9" in nums:
+        return nums.count("9")
     else:
         return 0

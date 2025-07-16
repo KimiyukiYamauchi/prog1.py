@@ -11,4 +11,11 @@
 # 
 
 def array123(nums):
+    for i in range(len(nums) - 2): # i 番目からi+2番目まで3連続で調べる
+
+        if nums[i] == 1 and nums[i+1] == 2 and nums[i+2] == 3:
+        # もし [1, 2, 3] の並びを見つけたら True を返す
+        
+            return True
+
     return False

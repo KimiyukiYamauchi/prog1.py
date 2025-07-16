@@ -12,4 +12,15 @@
 # @return 上記の条件が成り立つ個数を返す
 
 def string_match(a, b):
-    return -1
+    count = 0
+    
+    # 短い方の文字列の長さ - 1 までループ(2文字ペアを見るため)
+    length = min(len(a), len(b)) - 1
+
+    for i in range(length):
+        
+        # 同じ位置の2文字が一致しているかチェック
+        if a[i:i+2] == b[i:i+2]:
+            count += 1
+
+    return count
