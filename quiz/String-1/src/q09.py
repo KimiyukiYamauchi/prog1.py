@@ -12,4 +12,10 @@
 # @return string 上記の条件で作られる文字列を返す
 
 def combo_string(a, b):
-   return ""
+    if len(a) < len(b):
+        short = a 
+        long_ = b
+    else:
+        short = b
+        long_ = a
+    return short + long_ + short

@@ -9,5 +9,5 @@
 # 
 # @return string 上記の条件で作られた文字列
 
-def without_end(str):
-    return ""
+def without_end(s):
+    return s[1:-1] 

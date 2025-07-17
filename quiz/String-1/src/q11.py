@@ -10,5 +10,5 @@
 # 
 # @return string 上記の処理を行った文字列を返す
 
-def left2(str):
-    return ""
+def left2(s):
+    return s[2:] + s[:2] 
