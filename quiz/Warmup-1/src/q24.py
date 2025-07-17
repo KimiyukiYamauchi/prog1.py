@@ -12,4 +12,6 @@
 # 
 
 def int_max(a, b, c):
-    return a
+    return max(a,b,c) 
+
+#max関数は、要素の中から最大値を返す関数。

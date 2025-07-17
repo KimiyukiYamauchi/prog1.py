@@ -12,4 +12,7 @@
 # 
 
 def mix_start(str):
-    return str
+    return str[1:3] == "ix"
+
+#strのインデックス1から3に"ix"の2文字があるか。
+#最初の文字は任意の文字でいいので指定しない。
