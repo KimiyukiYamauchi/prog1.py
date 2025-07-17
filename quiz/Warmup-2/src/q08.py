@@ -11,4 +11,5 @@
 # 
 
 def array123(nums):
-    return False
+    text = "".join(str(n) for n in nums)
+    return "123" in text

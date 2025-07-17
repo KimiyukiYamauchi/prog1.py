@@ -11,4 +11,8 @@
 # 
 
 def array_front9(nums):
-    return -1
+    if 9 in nums[:4]:
+        return True
+    else:
+        return False
+

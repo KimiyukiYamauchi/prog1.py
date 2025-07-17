@@ -10,4 +10,8 @@
 # 
 
 def string_splosion(str):
-    return str
+    result = ""         # からの箱
+    for n in range (len(str)):
+        result += str[:n + 1]
+    return result
+    
