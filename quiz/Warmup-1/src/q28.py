@@ -12,4 +12,4 @@
 # 
 
 def string_e(str):
-    return False
+    return str.count('e') == 1 or str.count('e') == 3
