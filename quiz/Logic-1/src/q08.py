@@ -8,4 +8,13 @@ outside_mode TrueまたはFalse
 return 上記の条件に従ってTrueまたはFalseを返す
 '''
 def in1to10(n, outside_mode):
-    return False
+    if outside_mode == True:
+        if n <= 1 or n >= 10:
+            return True
+        else:
+            return False
+    else:
+        if n > 0 and n < 11:
+            return True
+        else:
+            return False
