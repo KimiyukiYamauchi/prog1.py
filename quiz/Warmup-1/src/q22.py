@@ -12,4 +12,7 @@
 # 
 
 def mix_start(str):
-    return str
+    if 
+        return True
+    else:
+        return False

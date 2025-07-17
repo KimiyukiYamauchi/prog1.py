@@ -12,4 +12,4 @@
 # 
 
 def close10(a, b):
-    return 0
+    return a if abs(a - 10) < abs(b - 10) else
