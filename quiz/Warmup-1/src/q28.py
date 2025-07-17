@@ -12,4 +12,10 @@
 # 
 
 def string_e(str):
-    return False
+    count = str.count('e')
+    if 1 <= count <= 1:
+        return True
+    elif 3 <= count <=3:
+        return True
+    else:
+        return False
