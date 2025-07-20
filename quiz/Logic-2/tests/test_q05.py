@@ -1,4 +1,10 @@
+import sys
+import os
 import pytest
+
+# src ディレクトリをパスに追加
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+
 from q05 import round_sum
 
 @pytest.mark.parametrize("a, b, c, expected", [

@@ -1,4 +1,10 @@
+import sys
+import os
 import pytest
+
+# src ディレクトリをパスに追加
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+
 from q07 import make_chocolate
 
 @pytest.mark.parametrize("small, big, goal, expected", [
