@@ -9,7 +9,7 @@ from q06 import close_far
     (4, 3, 5, False),
     (-1, 10, 0, True),
     (0, -1, 10, True),
-    (10, 10, 8, False),
+    (10, 10, 8, True),
     (10, 8, 9, False),
     (8, 9, 10, False),
     (8, 6, 9, True),
