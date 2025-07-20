@@ -1,4 +1,4 @@
-```
+'''
 ゴールの長さのレンガの列を作りたい。小さいレンガ (1インチずつ) 
 と大きいレンガ (5インチずつ) がある。
 与えられたレンガから選んでゴールを作ることが可能ならTrueを返す。
@@ -13,6 +13,7 @@ return: ゴールを作ることが可能ならTrue、そうでなければFalse
 make_bricks(3, 1, 8) → True
 make_bricks(3, 1, 9) → False
 make_bricks(3, 2, 10) → True
-````
+'''
 def make_bricks(small, big, goal):
-    return False
+    max_big = min(goal // 5, big)
+    return (goal - max_big * 5) <= small

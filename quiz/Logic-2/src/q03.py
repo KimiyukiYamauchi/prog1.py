@@ -1,4 +1,4 @@
-```
+'''
 3 つの int 値 a b c が与えられたとき、それらの合計を返す。
 ただし、値の1つが13の場合、その値は合計にカウントされず、その右側の値もカウントされない。
 つまり、例えばbが13の場合、bもcもカウントされない。
@@ -11,6 +11,12 @@ return: 合計値
 lucky_sum(1, 2, 3) → 6
 lucky_sum(1, 2, 13) → 3
 lucky_sum(1, 13, 3) → 1
-```
+'''
 def lucky_sum(a, b, c):
-    return -1
+    if a == 13:
+        return 0
+    if b == 13:
+        return a
+    if c == 13:
+        return a + b
+    return a + b + c

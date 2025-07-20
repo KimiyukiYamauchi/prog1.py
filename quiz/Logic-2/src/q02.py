@@ -1,4 +1,4 @@
-```
+'''
 3 つの int 値 a b c が与えられたとき、それらの合計を返す。
 ただし、値の1つが別の値と同じ場合は、合計にカウントされません。
 
@@ -11,6 +11,13 @@ return: 合計値
 one_sum(1, 2, 3) → 6
 lone_sum(3, 2, 3) → 2
 lone_sum(3, 3, 3) → 0
-````
+'''
 def lone_sum(a, b, c):
-    return -1
+    sum = 0
+    if a != b and a != c:
+        sum += a
+    if b != a and b != c:
+        sum += b
+    if c != a and c != b:
+        sum += c
+    return sum
