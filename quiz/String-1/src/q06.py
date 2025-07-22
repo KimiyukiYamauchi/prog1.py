@@ -10,4 +10,7 @@
 # @return string 上記の条件で作られた文字列を返す
 
 def first_two(str):
-    return ""
+    if len(str) < 3:
+        return str
+    else:
+        return str[:2]
