@@ -11,4 +11,5 @@ xyz_there('abc.xyz') → False
 xyz_there('xyz.abc') → True
 '''
 def xyz_there(s):
-    return False
+    return "xyz" in s.replace(".xyz", "")
+
