@@ -10,4 +10,14 @@
 # 
 
 def string_splosion(str):
-    return str
+     result = ""
+     for i in range(1, len(str) + 1):
+         result += str[:i]
+     return result
+
+#rangeで指定した値から1つずつ取得
+#最初の1
+#最初の文字から
+#len(str) + 1
+#strのrと次の文字の間のインデックスまで
+#result = result + str[:i]

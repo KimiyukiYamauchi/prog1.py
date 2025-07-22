@@ -12,4 +12,13 @@
 # 
 
 def front_times(str, n):
-    return ''
+    if len(str) >= 3:
+        return str[:3] * n
+    else:
+        return str[::] * n
+
+#最初のif文
+#lenでstrが3文字以上確認。3文字以上であれば、最初の位置から3文字スライスしてn回かける
+#else
+#それ以外。つまりstrが3文字以下のとき、
+#スライスで最初から最後までを指定([::])→ ある文字数分かける
