@@ -12,4 +12,8 @@
 # 
 
 def string_e(str):
-    return False
+    count = str.count("e")
+    return count == 1 or count == 3
+  
+#countというメソッドで、strにeが含まれているか判定する...やつをcountに代入する
+#countという引数に、eが1、または3つあるか判定し、該当すればTrueを返す。
