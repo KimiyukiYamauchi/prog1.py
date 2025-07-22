@@ -12,4 +12,7 @@
 # 
 
 def start_oz(str):
-    return result
+    if str[0] == "o" and str[1] == "z":
+        return str[0:1]
+    else:
+        return str[1]
