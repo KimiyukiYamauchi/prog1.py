@@ -11,4 +11,7 @@
 # 
 
 def rotate_left3(nums):
-    return []
+    if len(nums) == 3:
+        return nums[1:] + [nums[0]]
+    else:
+        return ""

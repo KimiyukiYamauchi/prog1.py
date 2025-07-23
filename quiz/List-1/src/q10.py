@@ -14,4 +14,4 @@
 #/
 
 def middle_way(a, b):
-    return []
+    return 
