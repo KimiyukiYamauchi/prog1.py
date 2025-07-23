@@ -15,4 +15,9 @@ alarm_clock(5, False) → '7:00'
 alarm_clock(0, False) → '10:00'
 '''
 def alarm_clock(day, vacation):
-    return ""
+    if 1 <= day <= 5 and vacation == False:
+        return "7:00"
+    elif (1 <= day <= 5 and vacation == True) or ((day == 0 or 6) and vacation ==False):
+        return "10:00"
+    else:
+        return "off"

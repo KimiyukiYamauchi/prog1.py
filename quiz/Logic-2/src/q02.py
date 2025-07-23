@@ -13,4 +13,6 @@ lone_sum(3, 2, 3) → 2
 lone_sum(3, 3, 3) → 0
 '''
 def lone_sum(a, b, c):
-    return -1
+    return sum(x for x in [a, b, c] if [a, b, c].count(x) == 1)
+
+    
