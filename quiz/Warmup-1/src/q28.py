@@ -12,4 +12,5 @@
 # 
 
 def string_e(str):
-    return False
+    count = s.count('e')
+    return count == 1 or count == 3

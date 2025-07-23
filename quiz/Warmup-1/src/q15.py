@@ -10,4 +10,5 @@
 # 
 
 def front22(str):
-    return stt
+    front = s[:2]
+    return front + s + front
