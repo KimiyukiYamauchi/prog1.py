@@ -11,4 +11,7 @@
 # @return bool True or False
 
 def has23(nums):
-    return False
+    if 2 in nums or 3 in nums:
+        return True
+    else:
+        return False
