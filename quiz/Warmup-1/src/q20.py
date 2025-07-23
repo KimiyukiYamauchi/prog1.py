@@ -13,4 +13,15 @@
 # 
 
 def lone_teen(a, b):
-    return False
+    if (13 <= a <= 19) and (13 > b or 19 < b):
+        return True  
+    elif (13 <= b <= 19) and (13 > a or 19 < a):
+        return True
+    else:
+        return False
+
+
+        
+
+
+
