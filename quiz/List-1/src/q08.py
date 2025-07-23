@@ -10,4 +10,4 @@
 # @return int []　上の処理を行った配列
 
 def max_end3(nums):
-    return []
+    return [nums[0],nums[1],nums[0]]

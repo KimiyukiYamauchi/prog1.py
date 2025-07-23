@@ -10,4 +10,5 @@
 # @return 要素の合計値
 
 def sum3(nums):
-    return -1
+    return sum(nums)
+

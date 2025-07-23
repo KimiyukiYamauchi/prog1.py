@@ -11,4 +11,4 @@
 # @return True or False
 
 def same_first_last(nums):
-    return False
+    return len(nums) >= 1 and nums[0] == nums[-1]
