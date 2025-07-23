@@ -11,4 +11,4 @@
 # @return bool True or False
 
 def has23(nums):
-    return False
+    return nums.count(2) > 0 or nums.count(3) > 0
