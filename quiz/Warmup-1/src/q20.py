@@ -13,4 +13,6 @@
 # 
 
 def lone_teen(a, b):
-    return False
+    x = 13 <= a <= 19
+    y = 13 <= b <= 19
+    return x ^ y

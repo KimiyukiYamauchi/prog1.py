@@ -12,4 +12,4 @@
 # 
 
 def int_max(a, b, c):
-    return a
+    return max(a,b,c)
