@@ -7,4 +7,5 @@ b: 文字列
 return: 文字列が末尾に現れる場合はTrue、そうでない場合はFalse
 '''
 def end_other(a, b):
-    return False
+    return a.lower().endswith(b.lower()) or b.lower().endswith(a.lower())
+
