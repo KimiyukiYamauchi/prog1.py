@@ -11,4 +11,7 @@
 # @return int [] 上記の処理を行った配列を返す
 
 def make_ends(nums):
-    return []
+    if len(nums) >= 2:
+        return [nums[0], nums[-1]]
+    else:
+        return [nums[0], nums[0]]
