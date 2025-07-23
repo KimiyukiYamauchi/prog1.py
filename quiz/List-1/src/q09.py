@@ -10,4 +10,10 @@
 # @return int 最初の2つの要素の合計
 
 def sum2(nums):
-    return -1
+#    if len(nums) >= 2:
+ #       return nums[0] + nums[1]
+  #  elif len(nums) == 1:
+   #     return nums[0]
+  #  else:
+   #     return 0
+    return sum(nums[:2])
