@@ -11,4 +11,4 @@
 # @return string HTMLタグで囲んだ文字列
 
 def make_tags(tag, word):
-    return ""
+    return "<{}>{}</{}>".format(tag, word, tag)
