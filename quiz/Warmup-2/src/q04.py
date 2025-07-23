@@ -10,4 +10,16 @@
 # 
 
 def string_splosion(str):
-    return str
+    if len(str) == 2:
+        return str[0] + str[:2]
+    elif len(str) == 3:
+        return str[0] + str[:2] + str[:3]
+    elif len(str) == 4:
+        return str[0] + str[:2] + str[:3] + str[:4]
+    elif len(str) == 5:
+        return str[0] + str[:2] + str[:3] + str[:4] + str[:5]
+    elif len(str) == 6:
+        return str[0] + str[:2] + str[:3] + str[:4] + str[:5] + str[:6]
+    else:
+        return str
+
