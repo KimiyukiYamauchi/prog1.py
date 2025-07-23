@@ -10,5 +10,9 @@
 # @return 引数(文字列)の末尾の文字を引数(文字列)の前後に追加した文字列を返す
 # 
 
-def back_around(str):
-    return ''
+def back_around(s: str):
+    if not s:  
+        raise ValueError("引数は1文字以上の文字列の必要がある")
+    last_char = s[-1]
+    return last_char + s + last_char 
+
