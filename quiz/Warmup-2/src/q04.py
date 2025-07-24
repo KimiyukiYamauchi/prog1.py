@@ -15,9 +15,10 @@ def string_splosion(str):
          result += str[:i]
      return result
 
-#rangeで指定した値から1つずつ取得
-#最初の1
-#最初の文字から
 #len(str) + 1
 #strのrと次の文字の間のインデックスまで
 #result = result + str[:i]
+
+#1回目は1文字まで、2回目は2文字目まで、3回目は3文字目まで、みたいな感じで
+#文字を取得してそれを結合させる
+
