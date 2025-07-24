@@ -5,6 +5,10 @@ Trueを返す。
 a: 文字列
 b: 文字列
 return: 文字列が末尾に現れる場合はTrue、そうでない場合はFalse
+
+end_other('Hiabc', 'abc') → True
+end_other('AbC', 'HiaBc') → True
+end_other('abc', 'abXabc') → True
 '''
 def end_other(a, b):
     a_lower = b.lower()
