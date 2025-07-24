@@ -11,4 +11,6 @@
 # @return string 上記の処理を行った文字列を返す
 
 def left2(str):
-    return ""
+    if len(str) < 2:
+        return str
+    return str[2:] +str[:2]
