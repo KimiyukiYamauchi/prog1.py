@@ -15,4 +15,15 @@ make_chocolate(4, 1, 10) → -1
 make_chocolate(4, 1, 7) → 2
 '''
 def make_chocolate(small, big, goal):
+    max_big = goal // 5
+
+    if big < max_big:
+        big_used = big
+    else:
+        big_used = max_big
+
+    remaining = goal - (big_used * 5)
+
+    if small >= remaining:
+        return remaining
     return -1
