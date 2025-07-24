@@ -9,6 +9,9 @@ count_code('aaacodebbb') → 1
 count_code('codexxcode') → 2
 count_code('cozexxcope') → 2
 '''
+import re
 
 def count_code(s):
-    return -1
+    s = s.lower()
+    pattern = r'co.e'
+    return len(re.findall(pattern, s))

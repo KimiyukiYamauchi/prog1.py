@@ -10,4 +10,5 @@ cat_dog('catcat') → False
 cat_dog('1cat1cadodog') → True
 '''
 def cat_dog(s):
-    return False
+    s = s.lower()
+    return s.count('cat') == s.count('dog')

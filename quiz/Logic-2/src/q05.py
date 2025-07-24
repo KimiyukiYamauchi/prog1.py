@@ -16,4 +16,10 @@ round_sum(12, 13, 14) → 30
 round_sum(6, 4, 4) → 10
 '''
 def round_sum(a, b, c):
-    return -1
+    return round10(a) + round10(b) + round10(c)
+
+def round10(num):
+    if num % 10 >= 5:
+        return num + (10 - num % 10)
+    else:
+        return num - (num % 10)

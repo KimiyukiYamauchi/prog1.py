@@ -10,5 +10,8 @@ xyz_there('abcxyz') → True
 xyz_there('abc.xyz') → False
 xyz_there('xyz.abc') → True
 '''
+import re
+
 def xyz_there(s):
-    return False
+    return bool(re.search(r'(?<!\.)xyz', s))
+
