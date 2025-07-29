@@ -9,4 +9,9 @@
 # @return string　上記の処理を行った文字列
 
 def first_half(str):
-    return ""
+    half = len(str) // 2
+    if len(str) >= 2:
+        return str[:half]
+    else:
+        return ""
+

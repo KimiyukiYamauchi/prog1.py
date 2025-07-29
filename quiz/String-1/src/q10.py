@@ -11,4 +11,5 @@
 # @return string 上記の処理を行った文字列を返す
 
 def non_start(a, b):
-    return ""
+    return a[1:] + b[1:]
+
