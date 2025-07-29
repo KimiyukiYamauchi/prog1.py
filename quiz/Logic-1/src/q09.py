@@ -15,4 +15,4 @@ near_ten(17) → False
 near_ten(19) → True
 '''
 def near_ten(num):
-    return False
+    return num % 10 in [0, 1, 2, 8, 9]
