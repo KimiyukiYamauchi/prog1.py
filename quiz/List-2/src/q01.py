@@ -6,4 +6,8 @@ nums: int[] - 整数のリスト
 '''
 
 def count_evens(nums):
-    return -1
+    count = 0 
+    for i in nums:
+        if i % 2 == 0: #2で割って偶数なら
+            count += 1 #カウントを1増やす
+    return count
