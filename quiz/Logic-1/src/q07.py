@@ -9,4 +9,9 @@ b 整数
 return 上の条件に従って、TrueまたはFalseを返す
 '''
 def love6(a, b):
-    return False
+    if a == 6 or b == 6:
+        return True
+    elif a + b == 6 or abs(a - b) == 6:
+        return True
+    else:
+        return False
