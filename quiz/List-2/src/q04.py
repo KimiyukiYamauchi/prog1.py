@@ -7,4 +7,14 @@ nums: 数字のリスト
 return: 数字の合計
 '''
 def sum13(nums):
-    return -1
+    total = 0
+    skip = False
+    for num in nums:
+        if skip:
+            skip = False
+            continue
+        if num == 13:
+            skip = True
+            continue
+        total += num
+    return total

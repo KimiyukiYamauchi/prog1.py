@@ -5,4 +5,6 @@ nums: int[] - 整数のリスト
 戻り値: int - 最大値と最小値の差
 '''
 def big_diff(nums):
-    return -1
+    if len(nums) >= 1:
+        return max(nums) - min(nums)
+
