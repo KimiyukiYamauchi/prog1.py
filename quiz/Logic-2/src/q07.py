@@ -15,4 +15,14 @@ make_chocolate(4, 1, 10) → -1
 make_chocolate(4, 1, 7) → 2
 '''
 def make_chocolate(small, big, goal):
+    max_big_use = min(big, goal // 5)
+
+    for big_use in range(max_big_use, -1, -1):  # 0も含める
+        remainder = goal - big_use * 5
+        if remainder <= small and remainder >= 0:
+            # 小さい棒を使うなら必ず大きい棒を使っているか確認
+            if remainder > 0 and big_use == 0:
+                continue
+            return remainder
     return -1
+

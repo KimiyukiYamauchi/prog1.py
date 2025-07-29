@@ -13,4 +13,11 @@ close_far(1, 2, 3) → False
 close_far(4, 1, 3) → True
 '''
 def close_far(a, b, c):
-    return False
+    b_close = abs(a - b) <= 1
+    c_far = abs(c - a) >= 2 and abs(c - b) >= 2
+
+    c_close = abs(a - c) <= 1
+    b_far = abs(b - a) >= 2 and abs(b - c) >= 2
+
+    return (b_close and c_far) or (c_close and b_far)
+

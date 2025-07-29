@@ -11,4 +11,9 @@ count_code('cozexxcope') → 2
 '''
 
 def count_code(s):
-    return -1
+    count = 0
+    for i in range(len(s) - 3):  # 4文字パターンなので -3 までループ
+        if s[i:i+2] == "co" and s[i+3] == "e":
+            count += 1
+    return count
+
