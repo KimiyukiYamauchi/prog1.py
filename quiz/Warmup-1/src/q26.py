@@ -12,8 +12,8 @@
 # 　　　　あるときtrueを返す。それ以外はfalseを返す
 
 def in3050(a, b):
-    if 30 <= a <= 40 or 40 <= a <= 50 and 30 <= b <= 40 or 40 <= b <= 50:
-        return True
-    else:
-        return False
+#    return 30 <= a <= 40 or 40 <= a <= 50 and 30 <= b <= 40 or 40 <= b <= 50
+    return (30 <= a <= 40 and 30 <= b <= 40) or (40 <= a <= 50 and 40 <= b <= 50)
 
+#aとbが"どっちも30以上40以下"になるか、"どっちも40以上50以下"であるか判定する
+#andとorには優先順位があるらしい。(andが上だとか。)

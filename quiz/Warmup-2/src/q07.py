@@ -11,4 +11,4 @@
 # 
 
 def array_front9(nums):
-    return -1
+    if len(nums) <= 4:

@@ -9,4 +9,6 @@
 # @return 上記の条件での数を返す
 
 def array_count9(nums):
-    return -1
+    return nums.count(9)
+
+#count関数で9という要素が何個あるか数える
