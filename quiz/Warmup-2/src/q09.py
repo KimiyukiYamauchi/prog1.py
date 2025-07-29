@@ -12,4 +12,10 @@
 # @return 上記の条件が成り立つ個数を返す
 
 def string_match(a, b):
-    return -1
+    pairs_a = {a[i:i+2] for i in range(len(a) -1)}
+    pairs_b = {b[i:i+2] for i in range(len(b) -1)}
+
+    comman_pairs = pairs_a.intersection(pairs_b)
+
+    return len(comman_pairs) >=3
+return False
