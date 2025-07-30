@@ -8,4 +8,14 @@ nums: 数字のリスト
 return: 数字の合計
 '''
 def sum67(nums):
-    return -1
+    total = 0
+    i = 0
+    while i < len(nums):
+        if nums[i] == 6:
+            while nums[i] != 7:
+                i += 1
+            i += 1
+        else:
+            total += nums[i]
+            i += 1
+    return total
