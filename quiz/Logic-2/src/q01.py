@@ -15,4 +15,14 @@ make_bricks(3, 1, 9) → False
 make_bricks(3, 2, 10) → True
 '''
 def make_bricks(small, big, goal):
-    return False
+    if goal // 5 <= big:
+        if goal % 5 <= small:
+            return True
+        else:
+            return False
+    else:
+        if goal - big *5 <= small:
+            return True
+        else:
+            return False
+
