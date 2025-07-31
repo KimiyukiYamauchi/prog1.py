@@ -8,4 +8,6 @@ nums: int[] - 整数のリスト
 戻り値: int - 中央揃えの平均
 '''
 def centered_average(nums):
-    return -1
+    nums.sort()
+    tmp = nums[1:-1]
+    return sum(tmp)//len(tmp)
