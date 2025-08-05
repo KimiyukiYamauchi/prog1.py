@@ -5,4 +5,4 @@ nums: 数字のリスト
 return: 2 の隣に 2 がある場合は True、そうでなければ False
 '''
 def has22(nums):
-    return False
+    return '22' in ''.join(str(num) for num in nums)
