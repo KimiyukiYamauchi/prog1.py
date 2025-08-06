@@ -12,5 +12,10 @@ one_sum(1, 2, 3) → 6
 lone_sum(3, 2, 3) → 2
 lone_sum(3, 3, 3) → 0
 '''
+from collections import Counter
+
 def lone_sum(a, b, c):
-    return -1
+    counts = Counter([a,b,c])
+    return sum(num for num, cnt in counts.items() if cnt == 1)
+
+

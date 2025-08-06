@@ -11,4 +11,4 @@ double_char('AAbb') → 'AAAAbbbb'
 double_char('Hi-There') → 'HHii--TThheerree'
 '''
 def double_char(s):
-    return ""
+    return "".join([char * 2 for char in s]) 
