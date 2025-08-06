@@ -18,3 +18,15 @@
 
 def monkey_trouble(a_smile, b_smile):
     return False
+
+if monkey_trouble(True,True):
+    return True
+
+if monkey_trouble(False,False):
+    return True
+
+if monkey_trouble(True,False):
+    return False
+
+if monkey_trouble(False,True):
+    return False

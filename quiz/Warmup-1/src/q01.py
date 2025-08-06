@@ -18,3 +18,15 @@
 
 def sleep_in(weekday, vacation):
     return False
+
+if sleep_in(False,False):
+    return True
+
+if sleep_in(True,False):
+    return False
+
+if sleep_in(False,True):
+    return True
+
+if sleep_in(True,True):
+    return True
