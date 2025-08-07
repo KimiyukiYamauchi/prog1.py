@@ -9,4 +9,12 @@ b 整数
 @return 上記の条件で、aとbの和を返す
 '''
 def sorta_sum(a, b):
-    return -1
+    c = a + b
+    if 10 <= c <= 19:
+        return 20 
+    else:
+        return c
+
+#まずa+bをして、そこから和が10~19か判定する
+#和がそれ以外だったらそのまま和を返す
+    

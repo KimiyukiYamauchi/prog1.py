@@ -13,4 +13,14 @@
 # cigar_party(70, True) → True
 
 def cigar_party(cigars, is_weekend):
-    return False
+    if 40 <= cigars <= 60 and is_weekend == False:
+        return True
+    elif 40 <= cigars and is_weekend == True:
+        return True 
+    else:
+        return False
+
+#is_weekend 週末=True 平日=False
+#最初のif cigarsが40本以上60本以内であり、平日か(is_weekendがFalse)
+#elif cigarsが40本以上かつ、週末か(is_weekendがTrue)
+

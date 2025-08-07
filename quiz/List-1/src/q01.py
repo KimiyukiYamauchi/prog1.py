@@ -11,4 +11,4 @@
 # @return True or False
 
 def first_last6(nums):
-    return False
+    return nums[0] == 6 or nums[-1] == 6 

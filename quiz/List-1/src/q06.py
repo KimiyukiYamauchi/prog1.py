@@ -11,4 +11,9 @@
 # 
 
 def rotate_left3(nums):
-    return []
+    a,b,c = nums
+    return [b,c,a] 
+
+#左ローテーシフトはよく分からない
+#要素をa,b,cとしたとして、左ローテーシフトするとb,c,aになるから、
+#a,b,cに代入したnumsの要素をb,c,aに入れ替える

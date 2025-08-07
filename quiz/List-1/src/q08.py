@@ -10,4 +10,12 @@
 # @return int []　上の処理を行った配列
 
 def max_end3(nums):
-    return []
+    a,b,c = nums
+    if a > c:
+        return [a,a,a]
+    elif c > a:
+        return [c,c,c]
+    elif a == c:
+        return [a,a,a] or [c,c,c]
+
+#aがcより大きい場合の処理、cがaより大きい場合の処理、aとcが同じ場合の処理

@@ -11,4 +11,8 @@
 # @return int [] 上記の処理を行った配列を返す
 
 def make_ends(nums):
-    return []
+    a = nums[0]
+    b = nums[-1]
+    return [a,b]  
+
+#要素をインデックスで指定してaとbに代入する。

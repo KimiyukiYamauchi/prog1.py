@@ -10,4 +10,13 @@
 # @return int 最初の2つの要素の合計
 
 def sum2(nums):
-    return -1
+    if len(nums) >= 2:
+        return nums[0] + nums[1]
+    elif len(nums) == 1:
+        return nums[0] 
+    elif len(nums) == 0:
+        return 0
+
+#numsが2つ以上(2も含む)だった場合の処理
+#numsが1つだった場合の処理(これはそのまま要素を返すだけらしい)
+#numsが０(そもそも要素がない)場合の処理

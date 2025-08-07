@@ -11,4 +11,14 @@
 # 
 
 def array_front9(nums):
-    if len(nums) <= 4:
+    return 9 in nums[:4]
+
+#    str_nums = str(nums)
+#    if str_nums.count("9",0,-4):
+#        return True
+#    elif len(str_nums) <= 4 and str_nums.count("9",0):
+#        return True 
+#    else:
+#        return False
+
+#numsという引数の4インデックスまでに"9"があるかin演算子で確認

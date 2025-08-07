@@ -14,4 +14,8 @@
 #/
 
 def middle_way(a, b):
-    return []
+    m,i,d = a
+    e,w,y = b
+    return [i,w] 
+
+#数字でやると中の要素と被ってエラーが出る

@@ -9,4 +9,4 @@ b 整数
 return 上の条件に従って、TrueまたはFalseを返す
 '''
 def love6(a, b):
-    return False
+    return (a == 6 or b == 6) or (a + b == 6 or a - b == 6 or b - a == 6)

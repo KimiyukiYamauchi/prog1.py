@@ -10,4 +10,7 @@
 # @return 要素の合計値
 
 def sum3(nums):
-    return -1
+    a,b,c = nums
+    return a + b + c 
+
+#numsに入っている要素をa,b,cに代入して1つずつにし、それを足し算する

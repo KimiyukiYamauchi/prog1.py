@@ -10,4 +10,5 @@
 # @return int []　配列の要素を逆順にした配列
 
 def reverse3(nums):
-    return []
+    a,b,c = nums 
+    return [c,b,a] 

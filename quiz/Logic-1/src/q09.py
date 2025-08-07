@@ -15,4 +15,9 @@ near_ten(17) → False
 near_ten(19) → True
 '''
 def near_ten(num):
-    return False
+    numm = num % 10
+    return numm <= 2 or numm >= 8 
+
+#このコードでは、 10 で割った余りが 0, 1, 2 または 8, 9 であるかどうかを判定
+
+
