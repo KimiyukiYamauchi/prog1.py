@@ -13,4 +13,11 @@ lucky_sum(1, 2, 13) → 3
 lucky_sum(1, 13, 3) → 1
 '''
 def lucky_sum(a, b, c):
-    return -1
+    sum = 0
+    if a == 13:
+        return 0
+    if b == 13:
+        return a
+    if c == 13:
+        return a + b
+    return a + b + c

@@ -15,4 +15,6 @@ make_bricks(3, 1, 9) → False
 make_bricks(3, 2, 10) → True
 '''
 def make_bricks(small, big, goal):
-    return False
+    max_big_use = min(goal // 5, big)
+    rest = goal - (max_big_use * 5)
+    return rest <= small
