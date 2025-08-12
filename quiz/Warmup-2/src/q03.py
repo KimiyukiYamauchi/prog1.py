@@ -10,4 +10,4 @@
 # 
 
 def string_bits(str):
-    return str
+    return str [::2]
