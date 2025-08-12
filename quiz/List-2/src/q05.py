@@ -8,4 +8,15 @@ nums: 数字のリスト
 return: 数字の合計
 '''
 def sum67(nums):
-    return -1
+    total = 0
+    ignore = False
+    for num in nums:
+        if num == 6:
+            ignore = True
+        elif ignore:
+            if num == 7:
+                ignore = False
+        else:
+            total += num
+    return total
+
