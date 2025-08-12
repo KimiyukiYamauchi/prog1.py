@@ -13,4 +13,9 @@
 #/
 
 def del_del(str):
-    return str
+    if str is None:
+        return str 
+    elif len(str) >= 4 and str.startswith("del", 1):
+        return str[:1] + str[4:]
+    else:
+        return str

@@ -12,4 +12,4 @@
 # 
 
 def mix_start(str):
-    return str
+    return len(str) >= 3 and str[1:3] == "ix" 

@@ -12,4 +12,9 @@
 # 
 
 def start_oz(str):
+    result = ""
+    if len(str) >= 1 and str[0] == "o":
+        result += "o"
+    if len(str) >= 2 and str[1] == "z":
+        result += "z"
     return result
