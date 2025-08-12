@@ -13,4 +13,5 @@
 # squirrel_play(95, True) → True
 
 def squirrel_play(temp, is_summer):
-    return False
+    upper_limit = 100 if is_summer else 90
+    return 60 <= temp <= upper_limit
