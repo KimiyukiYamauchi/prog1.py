@@ -25,4 +25,4 @@ def monkey_trouble(a_smile, b_smile):
         return False
     if a_smile == True and b_smile == False:
         return False
-
+    
