@@ -11,4 +11,8 @@
 # 
 
 def array_front9(nums):
-    return -1
+    for num in nums[:4]:   # スライスで先頭4つを取り出す
+        if num == 9:       # もし9が見つかったら
+            return True    # すぐにTrueを返す
+    return False           # 最後まで見て見つからなければFalse
+

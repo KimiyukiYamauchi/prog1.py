@@ -11,5 +11,6 @@
 # @return 文字列の最初3文字を非負の整数回繰り返した文字列
 # 
 
-def front_times(str, n):
-    return ''
+def front_times(s: str, n:int) -> str:
+    front = s[:3]
+    return front * n
