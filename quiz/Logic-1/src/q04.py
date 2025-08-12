@@ -16,4 +16,13 @@ caught_speeding(65, True) → 0
 
 '''
 def caught_speeding(speed, is_birthday):
-    return -1
+    if is_birthday:
+        speed -= 5
+
+    if speed <= 60:
+        return 0
+    elif speed <= 80:
+        return 1
+    else:
+        return 2
+
