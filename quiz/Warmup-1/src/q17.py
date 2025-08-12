@@ -12,5 +12,7 @@
 # 　　　　を返す。それ以外はfalseを返す
 # 
 
-def icy_hot(temp1, temp2):
-    return False
+def icy_hot(a, b):
+    return (a < 0 and b > 100) or (b < 0 and a > 100) 
+
+

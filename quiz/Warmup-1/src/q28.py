@@ -11,5 +11,7 @@
 # 　　　　それ以外ははfalseを返す
 # 
 
-def string_e(str):
-    return False
+def string_e(s):
+    count = s.count('e')
+    return count == 1 or count == 3
+

@@ -9,5 +9,8 @@
 # 
 # @return 対象の先頭文字と末尾の文字を入れ替えた文字列を返す
 # 
-def front_back(s):
-    return s
+def front_back(s: str) -> str:
+    if len(s) <= 1:
+        return s
+    return s[-1] + s[1:-1] + s[0]
+

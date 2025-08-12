@@ -1,4 +1,3 @@
-# sleep_in: 寝坊してもよいかを判定する関数
 #  引数の weekday は、平日であればTrue で、引数の vacation は、
 #  休暇中であればTrue です。平日ではないか、休暇中であれば寝坊します。
 #  寝坊する場合はTrue を返します。
@@ -17,4 +16,24 @@
 #  　sleep_in(False,True) → True
 
 def sleep_in(weekday, vacation):
-    return False
+    if not weekday or vacation:
+        return True
+    else:
+        return False 
+
+
+
+print(sleep_in(True, False))   # 平日、休暇なし → False
+print(sleep_in(False, False))  # 土日、休暇なし → True
+print(sleep_in(True, True))    # 平日、休暇中 → True
+print(sleep_in(False, True))   # 土日、休暇中 → True
+
+
+
+
+                
+
+
+
+
+

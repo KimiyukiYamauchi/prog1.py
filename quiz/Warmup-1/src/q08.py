@@ -16,5 +16,9 @@
 #         それ以外はFalse
 # 
 
-def pos_neg(a, b, negative):
-    return False
+def pos_neg(a: int, b: int, negative: bool) -> bool:
+    if negative:
+        return a < 0 and b < 0
+    else:
+        return (a < 0 < b) or (b < 0 < a)
+

@@ -12,5 +12,9 @@
 # 
 #/
 
-def del_del(str):
-    return str
+def del_del(s):
+    if s[1:4] == "del":
+        return s[0] + s[4:]
+    else:
+        return s
+
