@@ -9,8 +9,4 @@
 # @return 上記の条件での数を返す
 
 def last2(str):
-    if len(str) < 2:
-        return 0
-    target = str[-2:]
-    main = str[:-2]
-    return main.count(target)
+    return sum(str[i:i+2] == str[-2:] for i in range(len(str) - 2)) if len(str) >= 2 else 0
