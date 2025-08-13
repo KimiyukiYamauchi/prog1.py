@@ -14,6 +14,5 @@
 
 def del_del(str):
     if str[1:4] == "del":
-        return str[0]+ s[4:]
-    else:
-        return str
+        return str[0] + str[4:]
+    return str

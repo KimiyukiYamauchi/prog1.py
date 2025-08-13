@@ -11,5 +11,6 @@
 # 
 
 def back_around(str):
-    last_char = s[-1]
-    return last_char + s + last_char
+    if len(str) > 2:
+        return str[-1] + str + str[-1]
+    return str * 3
