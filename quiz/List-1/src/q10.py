@@ -14,4 +14,7 @@
 #/
 
 def middle_way(a, b):
-    return []
+    s = a[1]
+    n = b[1]
+
+    return  [s, n]

@@ -8,4 +8,4 @@
 # @return 上の配列
 
 def make_pi():
-    return []
+    return [3, 1, 4]

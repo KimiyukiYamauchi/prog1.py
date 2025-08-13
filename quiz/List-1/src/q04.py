@@ -13,4 +13,14 @@
 # @return bool True or False
 
 def common_end(a, b):
+    if not a and b:
+        return False
+
+    c = a[0]
+    d = a[-1]
+    e = b[0]
+    f = b[-1]
+
+    if c == e or d == f:
+        return True
     return False
