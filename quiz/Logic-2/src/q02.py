@@ -13,4 +13,12 @@ lone_sum(3, 2, 3) → 2
 lone_sum(3, 3, 3) → 0
 '''
 def lone_sum(a, b, c):
-    return -1
+    if a == b == c:
+        return 0
+    if a == b:
+        return c
+    if a == c:
+        return b
+    if b == c:
+        return a
+    return a + b + c
