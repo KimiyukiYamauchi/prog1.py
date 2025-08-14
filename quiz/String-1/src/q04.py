@@ -13,4 +13,4 @@
 # @return string 上記の条件で生成した文字列
 
 def make_out_word(out, word):
-    return ""
+    return out[:2] + word + out[2:]
