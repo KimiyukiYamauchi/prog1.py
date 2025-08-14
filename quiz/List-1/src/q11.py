@@ -15,3 +15,4 @@ def make_ends(nums):
         return [nums[0], nums[-1]]
     else:
         return [nums[0], nums[0]]
+
