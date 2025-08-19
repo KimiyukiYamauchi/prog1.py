@@ -9,6 +9,15 @@ return: 数字の合計
 '''
 def sum67(nums):
     total = 0
-    in_section = False
+    ignore = False  # 6〜7の間かどうか
 
-    for 
+    for n in nums:
+        if n == 6:
+            ignore = True
+        elif n == 7 and ignore:
+            ignore = False
+        elif not ignore:
+            total += n
+
+    return total
+
