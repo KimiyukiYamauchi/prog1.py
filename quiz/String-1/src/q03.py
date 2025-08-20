@@ -11,4 +11,8 @@
 # @return string HTMLタグで囲んだ文字列
 
 def make_tags(tag, word):
-    return ""
+    return f"<{tag}>{word}</{tag}>"
+      
+#    return "<" + tag + ">" + word + "</" + tag + ">" 
+
+#f文字列を使うと、波括弧{}で囲まれているところは引数を入れられる。それ以外はstrになる

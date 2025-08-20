@@ -9,4 +9,9 @@
 # @return string　上記の処理を行った文字列
 
 def first_half(str):
-    return ""
+    half = len(str) // 2
+    return str[:half]
+
+#strを割る２して、それをhalfに代入する
+#halfには文字列のうち、真ん中に値する文字？スライス？が入ってる
+#strの最初からhalfの位置まで返す

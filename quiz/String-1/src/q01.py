@@ -11,4 +11,6 @@
 #/
 
 def hello_name(name):
-    return ""
+    return "Hello " + name + "!" 
+
+#注意点は引数であるname以外はただの文字列なので、ダブルクォートをつける
