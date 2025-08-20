@@ -12,4 +12,6 @@
 # 　　　　あるときtrueを返す。それ以外はfalseを返す
 
 def in3050(a, b):
-    return False
+   in30_40 = 30 <= a <= 40 and 30 <= b <= 40
+   in40_50 = 40 <= a <= 50 and 40 <= b <= 50
+   return in30_40 or in40_50
