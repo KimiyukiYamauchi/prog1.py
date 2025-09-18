@@ -14,5 +14,8 @@ make_bricks(3, 1, 8) → True
 make_bricks(3, 1, 9) → False
 make_bricks(3, 2, 10) → True
 '''
-def make_bricks(small, big, goal):
-    return False
+def make_bricks(small: int, big: int, goal: int) -> bool:
+    max_big_needed = goal // 5
+    big_used = min(big, max_big_needed)
+    remaining = goal - big_used * 5
+    return small >= remaining

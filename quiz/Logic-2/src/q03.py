@@ -12,5 +12,15 @@ lucky_sum(1, 2, 3) → 6
 lucky_sum(1, 2, 13) → 3
 lucky_sum(1, 13, 3) → 1
 '''
-def lucky_sum(a, b, c):
-    return -1
+def lucky_sum(a: int, b: int, c: int) -> int:
+    total = 0
+    if a == 13:
+        return 0
+    total += a
+    if b == 13:
+        return total
+    total += b
+    if c == 13:
+        return total
+    total += c
+    return total

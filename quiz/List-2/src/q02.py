@@ -4,6 +4,6 @@
 nums: int[] - 整数のリスト
 戻り値: int - 最大値と最小値の差
 '''
-def max_min_diff(nums):
+def big_diff(nums: list[int]) -> int:
     return max(nums) - min(nums)
     

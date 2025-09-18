@@ -12,5 +12,7 @@
 # 
 # @return string 上記の条件で生成した文字列
 
-def make_out_word(out, word):
-    return ""
+def make_out_word(out: str, word: str) -> str:
+    start = out[:2]
+    end = out[2:]
+    return start + word + end

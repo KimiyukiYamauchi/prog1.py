@@ -10,5 +10,5 @@
 # 
 # @return string HTMLタグで囲んだ文字列
 
-def make_tags(tag, word):
-    return ""
+def make_tags(tag: str, word: str) -> str:
+    return f"<{tag}>{word}</{tag}>"

@@ -9,5 +9,6 @@ count_hi('abc hi ho') → 1
 count_hi('ABChi hi') → 2
 count_hi('hihi') → 2
 '''
-def count_hi(s):
-    return -1
+def count_hi(s: str) -> int:
+    return s.count("hi")
+

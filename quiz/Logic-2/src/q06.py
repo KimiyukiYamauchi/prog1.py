@@ -12,5 +12,10 @@ close_far(1, 2, 10) → True
 close_far(1, 2, 3) → False
 close_far(4, 1, 3) → True
 '''
-def close_far(a, b, c):
+def close_far(a: int, b: int, c: int) -> bool:
+    if abs(b - a) <= 1 and abs(c - a) >= 2 and abs(c - b) >= 2:
+        return True
+    if abs(c - a) <= 1 and abs(b - a) >= 2 and abs(b - c) >= 2:
+        return True
     return False
+

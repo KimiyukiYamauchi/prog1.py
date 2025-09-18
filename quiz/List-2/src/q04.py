@@ -6,16 +6,19 @@
 nums: 数字のリスト
 return: 数字の合計
 '''
-def sum_excluding_13(nums):
+def sum13(nums: list[int]) -> int:
     total = 0
-    skip_next = False
+    skip = False
+
     for num in nums:
-        if skip_next:
-            skip_next = False
+        if skip:
+            skip = False  
             continue
         if num == 13:
-            skip_next = True
+            skip = True  
             continue
         total += num
+
     return total
+
 

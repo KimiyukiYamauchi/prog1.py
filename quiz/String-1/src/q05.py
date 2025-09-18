@@ -9,5 +9,6 @@
 # 
 # @return string 上記の条件で作られた文字列を返す
 
-def extra_end(str):
-    return ""
+def extra_end(s: str) -> str:
+        return s[-2:] * 3
+

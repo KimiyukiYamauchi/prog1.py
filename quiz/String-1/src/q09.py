@@ -11,5 +11,9 @@
 # 
 # @return string 上記の条件で作られる文字列を返す
 
-def combo_string(a, b):
-   return ""
+def combo_string(a: str, b: str) -> str:
+    if len(a) < len(b):
+        short, long = a, b
+    else:
+        short, long = b, a
+    return short + long + short

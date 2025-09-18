@@ -10,5 +10,5 @@
 # 
 # @return string 上記の処理を行った文字列を返す
 
-def non_start(a, b):
-    return ""
+def non_start(a: str, b: str) -> str:
+    return a[1:] + b[1:]

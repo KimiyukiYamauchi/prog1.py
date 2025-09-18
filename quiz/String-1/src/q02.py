@@ -9,5 +9,6 @@
 # 
 # @return 与えられた2つの文字列aとbを、abbaの順序で結合した文字列
 
-def make_abba(a, b):
-    return ""
+def make_abba(a: str, b: str) -> str:
+    
+    return a + b + b + a

@@ -10,5 +10,8 @@ end_other('Hiabc', 'abc') → True
 end_other('AbC', 'HiaBc') → True
 end_other('abc', 'abXabc') → True
 '''
-def end_other(a, b):
-    return False
+def end_other(a: str, b: str) -> bool:
+    a_lower = a.lower()
+    b_lower = b.lower()
+    return a_lower.endswith(b_lower) or b_lower.endswith(a_lower)
+

@@ -12,5 +12,13 @@ one_sum(1, 2, 3) → 6
 lone_sum(3, 2, 3) → 2
 lone_sum(3, 3, 3) → 0
 '''
-def lone_sum(a, b, c):
-    return -1
+def lone_sum(a: int, b: int, c: int) -> int:
+    sum_total = 0
+    if a != b and a != c:
+        sum_total += a
+    if b != a and b != c:
+        sum_total += b
+    if c != a and c != b:
+        sum_total += c
+    return sum_total
+

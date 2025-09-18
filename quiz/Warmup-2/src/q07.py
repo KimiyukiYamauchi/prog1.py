@@ -10,5 +10,6 @@
 # @return 上記の条件での数を返す
 # 
 
-def array_front9(nums):
-    return -1
+def array_front9(nums: list[int]) -> bool:
+        return 9 in nums[:4]
+

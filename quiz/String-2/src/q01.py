@@ -10,5 +10,5 @@ double_char('The') → 'TThhee'
 double_char('AAbb') → 'AAAAbbbb'
 double_char('Hi-There') → 'HHii--TThheerree'
 '''
-def double_char(s):
-    return ""
+def double_char(s: str) -> str:
+    return ''.join([c*2 for c in s])

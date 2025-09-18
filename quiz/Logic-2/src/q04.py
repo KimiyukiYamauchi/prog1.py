@@ -18,5 +18,9 @@ no_teen_sum(1, 2, 3) → 6
 no_teen_sum(2, 13, 1) → 3
 no_teen_sum(2, 1, 14) → 3
 '''
-def no_teen_sum(a, b, c):
-    return -1
+def no_teen_sum(a: int, b: int, c: int) -> int:
+    return fix_teen(a) + fix_teen(b) + fix_teen(c)
+def fix_teen(n: int) -> int:
+    if n in (13, 14, 17, 18, 19):
+        return 0
+    return n
