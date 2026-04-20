@@ -14,4 +14,7 @@
 # 
 
 def has_teen(a, b, c):
-    return False
+    if 12 < a < 20 or 12 < b < 20 or 12 < c < 20:
+        return True
+    else:
+        return False

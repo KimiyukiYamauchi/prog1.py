@@ -13,4 +13,7 @@
 # 
 
 def in1020(a, b):
-    return False
+    if 9 < a < 21 or 9 < b < 21:
+        return True
+    else:
+        return False
