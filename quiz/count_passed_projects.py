@@ -3,10 +3,10 @@ import os
 import glob
 
 projects = [
-    "List-1", "List-2",
-    "Logic-1", "Logic-2",
-    "String-1", "String-2",
-    "Warmup-1", "Warmup-2"
+    "01.Warmup-1", "02.Warmup-2",
+    "03.Logic-1", "04.Logic-2",
+    "05.String-1", "06.String-2",
+    "07.List-1", "08.List-2",
 ]
 
 def run_pytest_individually(projects):
